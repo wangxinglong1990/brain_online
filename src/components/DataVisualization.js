@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import './DataVisualization.css';
+import newplotImg from '../assets/newplot.png';
 
 const DataVisualization = () => {
   const [ref, inView] = useInView({
@@ -45,7 +46,7 @@ const DataVisualization = () => {
             <h3 className="wave-title">真实MEG脑信号记录</h3>
             <div className="meg-visualization-container">
               <img
-                src="/newplot.png"
+                src={newplotImg}
                 alt="MEG Brain Signal Visualization"
                 style={{
                   width: '100%',
