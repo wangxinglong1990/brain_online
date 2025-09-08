@@ -1,0 +1,179 @@
+.model-architecture {
+  margin-top: 60px;
+  padding: 40px 0;
+}
+
+.architecture-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.architecture-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.architecture-desc {
+  font-size: 1.1rem;
+  color: #718096;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.architecture-diagram {
+  background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  margin-bottom: 40px;
+  overflow: hidden;
+}
+
+.architecture-svg {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* Data flow animation */
+.data-flow {
+  stroke-dasharray: 5, 5;
+  stroke-dashoffset: 0;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.animate-flow {
+  animation: flowAnimation 2s linear infinite;
+  opacity: 1;
+}
+
+@keyframes flowAnimation {
+  0% {
+    stroke-dashoffset: 10;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+/* Interactive hover effects */
+.input-group rect,
+.enhancement-group rect,
+.transformer-group rect,
+.attention-group rect,
+.tasks-group rect,
+.output-group circle,
+.features-group rect {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.input-group:hover rect,
+.enhancement-group:hover rect,
+.transformer-group:hover rect,
+.attention-group:hover rect,
+.tasks-group:hover rect,
+.output-group:hover circle,
+.features-group rect:hover {
+  transform: translateY(-2px);
+  filter: url(#shadow) brightness(1.1);
+}
+
+/* Architecture features */
+.architecture-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature-icon {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.feature-text {
+  font-size: 1rem;
+  color: #2d3748;
+  font-weight: 500;
+  flex: 1;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .architecture-diagram {
+    padding: 20px;
+  }
+
+  .architecture-subtitle {
+    font-size: 1.5rem;
+  }
+
+  .architecture-desc {
+    font-size: 1rem;
+  }
+
+  .architecture-features {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-item {
+    padding: 15px;
+  }
+
+  .feature-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  .feature-text {
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation on scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.architecture-content {
+  animation: fadeInUp 0.8s ease-out;
+} 
