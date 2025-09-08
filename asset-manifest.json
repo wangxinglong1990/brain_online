@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/brain_online/static/css/main.43b99d1e.css",
+    "main.js": "/brain_online/static/js/main.c106e7e5.js",
+    "static/media/brain.jpg": "/brain_online/static/media/brain.2df7f24345634befa43a.jpg",
+    "static/media/figure1.png": "/brain_online/static/media/figure1.4dc2c38ec2d988893507.png",
+    "static/media/figure2.png": "/brain_online/static/media/figure2.aae0c1dcd5dc12922a12.png",
+    "static/media/figure3.png": "/brain_online/static/media/figure3.73e9d8091a6cb89e828e.png",
+    "static/media/newplot.png": "/brain_online/static/media/newplot.e98fb97c3172035e1e26.png",
+    "index.html": "/brain_online/index.html",
+    "main.43b99d1e.css.map": "/brain_online/static/css/main.43b99d1e.css.map",
+    "main.c106e7e5.js.map": "/brain_online/static/js/main.c106e7e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.43b99d1e.css",
+    "static/js/main.c106e7e5.js"
+  ]
+}
