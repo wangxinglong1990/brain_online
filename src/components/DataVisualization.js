@@ -44,13 +44,12 @@ const DataVisualization = () => {
           >
             <h3 className="wave-title">真实MEG脑信号记录</h3>
             <div className="meg-visualization-container">
-              <iframe
-                src="/meg_simple_visualization.html"
-                width="100%"
-                height="500"
-                frameBorder="0"
-                title="MEG Brain Signal Visualization"
+              <img
+                src="/newplot.png"
+                alt="MEG Brain Signal Visualization"
                 style={{
+                  width: '100%',
+                  height: 'auto',
                   borderRadius: '12px',
                   boxShadow: '0 4px 20px rgba(0, 0, 0, 0.08)',
                   background: 'white'
